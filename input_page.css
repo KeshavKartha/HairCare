@@ -1,26 +1,17 @@
 body {
-   
+    background-image: url("../media/input_bg.jpg");
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #FFFFFF;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-}
-.object {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 120%;
-    height: 100vh;
-    background-image: url('../media/input_bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
 }
 .nav {
     background-color: #f2f2f200;
     min-height: 50px;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 999;
@@ -36,42 +27,42 @@ body {
 }
   
 .nav-contents {
-	backdrop-filter: blur(5px);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center; 
     cursor: pointer;
-	
-    box-shadow:0px 2px 5px#33333367;
+    
 }
 
 .contents{
-    margin: 10px 20px;
+    margin: 15px 30px;
     padding: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-    
-    border-radius: 20px;
-    
-    color: #000000;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid #520c95;
+    border-radius: 30px;
+    background-color: #520c95;
+    color: #ffffff;
     text-decoration: none;
-	
 }
 .contents:hover{
-    background-color: #6e13de;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size:bold ;
     
 }
 .contents:active{
     transform:translateX(2px);
     transform:translateY(2px);
 }
+.toggle_btn .material-symbols-outlined{
+    color: rgb(86, 7, 138);
+    cursor: pointer;
+    display: none;
+}
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     max-width: 500px;
     margin: 130px auto;
     padding: 40px;
@@ -110,8 +101,8 @@ select {
 }
 
 button {
-    margin-top: 15px;
-    background-color: #3a1876;
+    align-self: center;
+    background-color: #673AB7;
     color: #FFFFFF;
     padding: 10px 20px;
     border: none;
@@ -120,19 +111,14 @@ button {
 }
 
 button:hover {
-    background-color: #21163c;
+    background-color: #512DA8;
 }
-button:active{
-    transform: translateX(2px);
-    transform: translateY(2px);
-}
-/* @media (max-width: 850px) {
+@media (max-width: 850px) {
     .nav-contents{
         display: none;
     }
     
     .toggle_btn .material-symbols-outlined{
         display: block;
-        z-index: 999;
     }
-} */
+}

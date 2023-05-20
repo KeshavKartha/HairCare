@@ -28,40 +28,44 @@ body::-webkit-scrollbar-track {
 .nav {
     background-color: #f2f2f200;
     min-height: 50px;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 999;
 }
   
-
+.nav-logo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+   
+}
   
 .nav-contents {
-	backdrop-filter: blur(5px);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center; 
     cursor: pointer;
-	
-    box-shadow:0px 2px 5px#33333367;
+    
 }
 
 .contents{
-    margin: 10px 20px;
+    margin: 15px 30px;
     padding: 8px;
     padding-left: 20px;
     padding-right: 20px;
-    
-    border-radius: 20px;
-    
-    color: #ffffff;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: white;
+    color: #333;
     text-decoration: none;
-	
 }
 .contents:hover{
-    background-color: #7410d7;
+    background-color: #591995;
     color: white;
     
 }
@@ -70,12 +74,13 @@ body::-webkit-scrollbar-track {
     transform:translateY(2px);
 }
 .intro{
-	
+	grid-column: span 3;
+	grid-row: 2/3;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: 50px;
+	
 	z-index: 500;
 	width: 100%;
 	height: 88vh;
@@ -102,7 +107,7 @@ body::-webkit-scrollbar-track {
 }
 .left{
     
-    padding-top: 30px;
+    
     margin-top: 250px;
 	opacity: 0;
     animation: fade-in 1s ease forwards;
@@ -153,10 +158,10 @@ body::-webkit-scrollbar-track {
     display: flex;
 	
 	font-weight: bold;
-	
+	text-shadow: 0px 1px 20px rgba(53, 53, 53, 0.723);
 	padding-left: 15%;
-	font-size:  2vw;
-	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
 	color: rgb(255, 255, 255);
 	
 }
@@ -165,8 +170,8 @@ body::-webkit-scrollbar-track {
     padding-left: 15%;
     
 	display: flex;
-	
-	font-size: 5vw;
+	text-shadow: 0px 1px 20px rgba(40, 40, 40, 0.779);
+	font-size: 75px;
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(255, 255, 255);
 }
@@ -174,7 +179,7 @@ body::-webkit-scrollbar-track {
 	opacity: 0;
 	max-width: 40vw;
 	padding-left: 15%;
-    
+    text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.87);
 	font-size: 22px;
 	font-family: 'Lato', sans-serif;
 	color: rgb(255, 255, 255);
@@ -261,8 +266,8 @@ body::-webkit-scrollbar-track {
 	margin-top: 50px;
 	border: 2px solid rgba(255, 255, 255, 0);
     background-color: #1d1d1d3c;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px rgba(41, 41, 41, 0.325);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(41, 41, 41, 0.522);
 	padding: 20px 20px;
 }
 

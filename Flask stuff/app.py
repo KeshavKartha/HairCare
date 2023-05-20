@@ -19,7 +19,7 @@ def process_input():
     input3 = '1'
     input4 = '1'
     input5 = '500'
-    joined_string = ','.join([input2,input5,input1,input4,input5])
+    joined_string = ','.join([input2,input5,input1,input3,input4])
     print(joined_string)
     prediction = (predictor2.predict(joined_string))
     print(prediction)
