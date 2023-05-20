@@ -15,10 +15,10 @@ def input_page():
 @app.route('/process_input', methods=['POST'])
 def process_input():
     input1 = request.form.get('age')
-    input2 = 'ABVD'
-    input3 = '1'
-    input4 = '1'
-    input5 = '500'
+    input2 = 'CMF'
+    input3 = '0'
+    input4 = '0'
+    input5 = '150'
     joined_string = ','.join([input2,input5,input1,input3,input4])
     print(joined_string)
     prediction = (predictor2.predict(joined_string))
@@ -28,7 +28,7 @@ def process_input():
     if(prediction==0):
         return render_template('output_hairloss.html')
     elif(prediction==1):
-        return render_template('output_partialloss.html')
-    else:
         return render_template('output_nohairloss.html')
+    else:
+        return render_template('output_partialloss.html')
 
