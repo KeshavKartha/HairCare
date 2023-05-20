@@ -4,7 +4,7 @@ import joblib
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 
-#Load the saved models 
+#Load the saved model 
 classifier = joblib.load('C:/Users/Keshav/Downloads/saved_model.pkl')
 
 # format given new data
