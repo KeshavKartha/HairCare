@@ -19,9 +19,11 @@ def process_input():
     input3 = '0'
     input4 = '0'
     input5 = '150'
-    joined_string = ','.join([input2,input5,input1,input3,input4])
-    print(joined_string)
-    prediction = (predictor2.predict(joined_string))
+    data_string = ','.join([input2,input5,input1,input3,input4])
+    
+    
+    print(data_string)
+    prediction = (predictor2.predict(data_string))
     print(prediction)
     #Prediction: 0->Complete, 1->None, 2->Partial
 
