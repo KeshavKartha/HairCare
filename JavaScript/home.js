@@ -7,7 +7,7 @@ window.addEventListener("scroll",()=>{
     let value=window.scrollY;
 
     stack1.style.left=value* -0.5 + "px";
-   
+    stack2.style.left=value* -0.1 + "px";
     stack2.style.top=value* 0.1 + "px";
     stack3.style.top=value* 0.2 + "px";
    
