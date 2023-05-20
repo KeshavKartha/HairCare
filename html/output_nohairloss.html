@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="en"> 
+
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HairCare.com</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/output_page.css">
     </head>
     <body>
         <div class="parallax">
-            <img src="../media/stack3cutlong.png" id="stack3">
-            <img src="../media/stack2final.png" id="stack2">
-            <img src="../media/stack1final.png" id="stack1">
+            <div class="object" data-value="3"></div>
         </div>
-        <div class="nav-logo"></div>
         <div class="nav">
             
             <div class="nav-contents">
@@ -30,27 +25,12 @@
                 <a href="../html/input_page.html" class="contents details">Let's Find Out!!</a>
             </div>
         </div>
-        <div class="intro">
-			
-			<div class="left">
-				
-					<div class="heading">Welcome to</div>
-					<div class="subheading">HairCare.com</div>
-					<div class="intro_para"><p class="head_para">An ML Model that predicts the outcome of hair loss after a Chemotherapy</p></div>
-                    <!-- <button class ="products" >VIEW ALL PRODUCTS <span class="material-symbols-sharp">
-                    </span>
-                    </button> -->
-				
-			</div>
-			<div class="right">
-				<div class="head-right">
-                    <img src="../media/DrawKit Vector Illustration Mental Health & Psychology (5).png" alt="">
-                     
-                </div>
-					
-			</div>
-		</div>
-        
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="results">ML Prediction modal answer :- <span class="answer">  No Hair Loss</span></div>
+            </div>
+        </div>
         <div class="second_page">
             <div class="con1 des_page">
                 <h1 class="des_headings">Who we aim to serve...</h1>
@@ -79,13 +59,21 @@
                 <br>
             </div>
         </div>
-            
-        <section>
-            <div class="aboutus">
-            </div>
-        </section>
-        <script src="../JavaScript/home.js" async defer></script>
-    </body>
-               
-</html>
 
+        <script type="text/javascript">
+            document.addEventListener("mousemove", parallax);
+          
+            function parallax(e) {
+              document.querySelectorAll(".object").forEach(function (move) {
+                var moving_value = move.getAttribute("data-value");
+                var x = (e.clientX * moving_value) / 250;
+                var y = (e.clientY * moving_value) / 250;
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+              });
+            }
+          </script>
+          
+
+        <script src="" async defer></script>
+    </body>
+</html>

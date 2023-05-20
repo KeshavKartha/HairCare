@@ -14,17 +14,17 @@
         <link rel="stylesheet" href="../css/input_page.css">
     </head>
     <body>
+        <div class="parallax">
+            <div class="object" data-value="4"></div>
+        </div>
+        
         <div class="nav">
             
             <div class="nav-contents">
-                <a href="" class="contents home">Home</a>
+                <a href="../html/home.html" class="contents home">Home</a>
                 <a href="" class="contents about">About</a>
-                <a href="" class="contents details">Let's Find Out!!</a>
-                <div class="toggle_btn">
-                    <div class="material-symbols-outlined">
-                        menu
-                        </div>
-                </div>
+                <a href="../html/output_nohairloss.html" class="contents about">Results</a>
+                <a href="../html/input_page.html" class="contents details">Let's Find Out!!</a>
             </div>
         </div>
         <div class="container">
@@ -46,14 +46,27 @@
 
                 <label for="option">Chemotherapy Regimen:</label>
                 <select id="option" name="option">
-                    <option value="option1">ABVD</option>
-                    <option value="option2">BEP</option>
-                    <option value="option3">CMF</option>
-                    <option value="option4">---NONE---</option>
+                    <option value="option1">---NONE---</option>
+                    <option value="option2">ABVD</option>
+                    <option value="option3">BEP</option>
+                    <option value="option4">CMF</option>
+                    
                 </select>
 
                 <button type="submit">Submit</button>
             </form>
+            <script type="text/javascript">
+                document.addEventListener("mousemove", parallax);
+              
+                function parallax(e) {
+                  document.querySelectorAll(".object").forEach(function (move) {
+                    var moving_value = move.getAttribute("data-value");
+                    var x = (e.clientX * moving_value) / 250;
+                    var y = (e.clientY * moving_value) / 250;
+                    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+                  });
+                }
+              </script>
 
 
        
