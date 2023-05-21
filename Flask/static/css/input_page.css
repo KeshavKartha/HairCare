@@ -143,6 +143,7 @@ button:active{
     transform: translateX(2px);
     transform: translateY(2px);
 }
+
 /* @media (max-width: 850px) {
     .nav-contents{
         display: none;
