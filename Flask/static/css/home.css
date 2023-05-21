@@ -31,7 +31,19 @@ body::-webkit-scrollbar-track {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 998;
+}
+.nav-logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 8px 8px;
+	height: 40px ;
+	width: 200px;
+	background-image: url(../media/Asset\ 2.png);
+	background-position: center;
+	background-size: contain;
+	z-index: 999;
 }
   
 
@@ -59,6 +71,9 @@ body::-webkit-scrollbar-track {
     color: #ffffff;
     text-decoration: none;
 	
+}
+.home{
+	margin-left: 200px;
 }
 .contents:hover{
     background-color: #7410d7;
@@ -156,7 +171,7 @@ body::-webkit-scrollbar-track {
 	
 	padding-left: 15%;
 	font-size:  2vw;
-	font-family: 'Open Sans', sans-serif;
+	
 	color: rgb(255, 255, 255);
 	
 }
@@ -167,7 +182,7 @@ body::-webkit-scrollbar-track {
 	display: flex;
 	
 	font-size: 5vw;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: rgb(255, 255, 255);
 }
 .intro_para{
