@@ -31,7 +31,19 @@ body::-webkit-scrollbar-track {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 900;
+}
+.nav-logo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 300px;
+	height: 300px;
+	background-image: url(../media/Asset\ 2.png);
+	
+	z-index: 959;
+	
+
 }
   
 
@@ -156,7 +168,7 @@ body::-webkit-scrollbar-track {
 	
 	padding-left: 15%;
 	font-size:  2vw;
-	font-family: 'Open Sans', sans-serif;
+	
 	color: rgb(255, 255, 255);
 	
 }
@@ -167,7 +179,7 @@ body::-webkit-scrollbar-track {
 	display: flex;
 	
 	font-size: 5vw;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: rgb(255, 255, 255);
 }
 .intro_para{
