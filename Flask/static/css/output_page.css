@@ -15,11 +15,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-  
-
-  
-  
-
 .nav {
     background-color: #f2f2f200;
     min-height: 50px;
@@ -114,7 +109,8 @@ body{
 .des_page{
     max-width: 75%;
     min-width: 50%;
-	font-family:'Poppins', sans-serif ;
+    font-size: 1.2rem;
+	font-family: 'Wix Madefor Display', sans-serif;
 	margin-top: 50px;
 	border: 2px solid rgba(255, 255, 255, 0);
     background-color: #1d1d1d3c;
@@ -152,16 +148,16 @@ body{
 	
 }
 .para_left{
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+	
+	
 	text-align: justify;
 	padding-right: 90px;
 	padding-left: 40px;
 	
 }
 .para_right{
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+
+
 	text-align: justify;
 	padding-left: 90px;
 	padding-right: 40px;

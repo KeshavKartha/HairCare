@@ -249,7 +249,7 @@ body::-webkit-scrollbar-track {
     min-width: 50%;
 	font-family: 'Wix Madefor Display', sans-serif;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
 	margin-top: 50px;
 	border: 2px solid rgba(255, 255, 255, 0);
     background-color: #1d1d1d3c;
@@ -287,7 +287,7 @@ body::-webkit-scrollbar-track {
 	
 }
 .para_left{
-	font-size: 18px;
+	
 	text-align: justify;
 	padding-right: 90px;
 	padding-left: 40px;
@@ -295,7 +295,7 @@ body::-webkit-scrollbar-track {
 }
 .para_right{
 	
-	font-size: 18px;
+
 	text-align: justify;
 	padding-left: 90px;
 	padding-right: 40px;
