@@ -40,7 +40,7 @@ body {
 }
   
 .nav-contents {
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(7px);
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -76,13 +76,16 @@ body {
     transform:translateY(2px);
 }
 .container {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.01rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 500px;
-    margin: 130px auto;
+    margin: 110px auto;
     padding: 40px;
     backdrop-filter: blur(15px);
+    background-color: #00000027;
     box-shadow: 0 0 15px rgba(33, 33, 33, 0.463);
     border-radius: 5px;
 }
@@ -90,22 +93,19 @@ body {
 input[type="text"]{
     width: 100%;
     padding: 10px;
-    
-   
-    margin-bottom: 10px;
+    margin: 13px 0px;
     border: none;
     border-radius: 3px;
 }
 
 label {
-    font-family: 'Roboto', sans-serif;
-    
     display: block;
     margin-bottom: 5px;
 }
 
 input[type="checkbox"] {
     margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 select {
@@ -115,10 +115,18 @@ select {
     border: none;
     border-radius: 3px;
 }
+.submit_area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
     margin-top: 15px;
-    background-color: #3a1876;
+    background-color: #000000;
     color: #FFFFFF;
     padding: 10px 20px;
     border: none;
@@ -127,7 +135,9 @@ button {
 }
 
 button:hover {
-    background-color: #21163c;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold
 }
 button:active{
     transform: translateX(2px);

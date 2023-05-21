@@ -7,7 +7,7 @@ body::-webkit-scrollbar {
     background-color: transparent;
 }
 body{
-    background-color: #0d559c;
+    background-color: #0b4075;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -60,12 +60,12 @@ body{
     
     border-radius: 20px;
     
-    color: #ffffff;
+    color: whitesmoke;
     text-decoration: none;
 	
 }
 .contents:hover{
-    background-color: #ffffff;
+    background-color: whitesmoke;
     color: #000000;
     
     
@@ -77,8 +77,8 @@ body{
 .first{
     margin-top:30px;
     color: #000000;
-    background-color: #ffffff;
-    border: 2px solid white;
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
     border-radius: 10px;
     padding: 20px 20px;
     margin-bottom: 40px;
@@ -95,7 +95,7 @@ body{
     border-radius: 7px;
     padding: 5px 15px ;
     font-size: 1.3 rem;
-    color: #ffffff;
+    color: whitesmoke;
 }
 .second_page{
    
