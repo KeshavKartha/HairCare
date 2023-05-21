@@ -31,19 +31,19 @@ body::-webkit-scrollbar-track {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 900;
+    z-index: 998;
 }
 .nav-logo{
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 300px;
-	height: 300px;
+	margin: 8px 8px;
+	height: 40px ;
+	width: 200px;
 	background-image: url(../media/Asset\ 2.png);
-	
-	z-index: 959;
-	
-
+	background-position: center;
+	background-size: contain;
+	z-index: 999;
 }
   
 
@@ -71,6 +71,9 @@ body::-webkit-scrollbar-track {
     color: #ffffff;
     text-decoration: none;
 	
+}
+.home{
+	margin-left: 200px;
 }
 .contents:hover{
     background-color: #7410d7;

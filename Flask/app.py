@@ -42,3 +42,6 @@ def process_input():
     else:
         return render_template('output_partialloss.html')
 
+@app.route('/output_nohairloss', methods=['GET'])
+def output_nohairloss():
+    return render_template('output_nohairloss.html')
