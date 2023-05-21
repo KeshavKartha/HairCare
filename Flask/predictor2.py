@@ -8,8 +8,8 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 #Load the saved model 
 home_dir = os.path.expanduser("~")
 downloads_dir = os.path.join(home_dir, "Downloads/saved_model.pkl")
-classifier = joblib.load("C:/Users/gloon_ie3ex1l/Coding/Projects/HairCare.com/ML/saved_model.pkl")
-#classifier = joblib.load(downloads_dir)
+#classifier = joblib.load("C:/Users/gloon_ie3ex1l/Coding/Projects/HairCare.com/ML/saved_model.pkl")
+classifier = joblib.load(downloads_dir)
 
 # format given new data
 def format_input(new_data):
