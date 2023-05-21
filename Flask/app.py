@@ -43,5 +43,6 @@ def process_input():
     else:
         return render_template('output_partialloss.html')
 
-if __name__ == '__main__':
-    app.run()
+@app.route('/output_nohairloss', methods=['GET'])
+def output_nohairloss():
+    return render_template('output_nohairloss.html')
