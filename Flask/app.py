@@ -14,12 +14,7 @@ def input_page():
 
 @app.route('/process_input', methods=['POST'])
 def process_input():
-    input1 = str(request.form.get('age'))
-    # if(request.form.get('option')=='option2'):
-    #     input2 = 'ABVD'
-    # elif(request.form.get('option')=='option3'):
-    #     input2 = 'BEP'
-    # else: input2 = 'CMF'
+    input1 = request.form.get('age')
     input2 = request.form.get('regimen')
     if(request.form.get('hairloss')=='on'):
         input4 = '1'
@@ -27,7 +22,7 @@ def process_input():
     if(request.form.get('hypertension')=='on'):
         input3 = '1'
     else: input3 = '0'
-    input5 = str(request.form.get('drug'))
+    input5 = request.form.get('drug')
     data_string = ','.join([input2,input5,input1,input3,input4])
     
     
